@@ -36,11 +36,11 @@ class Bug(models.Model):
         return self.title
 
 
-class Comment(models.Model):
-    bug = models.ForeignKey(Bug, on_delete=models.CASCADE)
-    description = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    created_by = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.description
+# class Comment(models.Model):
+#     bug = models.ForeignKey(Bug, on_delete=models.CASCADE)
+#     description = models.TextField()
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     created_by = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+#
+#     def __str__(self):
+#         return self.description
