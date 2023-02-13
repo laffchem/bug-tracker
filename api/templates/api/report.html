@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Report Bugs{% endblock %}
+{% load django_bootstrap5 %}{% load widget_tweaks %}
+{% block content %}
+ <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="heading-projects mb-5">Report Bugs</h1>
+            {% if form.errors %}
+                {% bootstrap_alert "Invalid Request" alert_type="danger"%}
+
+            {% else %}
+            {% endif %}
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form action="" method="post" class="form m-auto">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    {% bootstrap_button "Submit" button_type="submit" button_class="btn btn-custom" %}
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

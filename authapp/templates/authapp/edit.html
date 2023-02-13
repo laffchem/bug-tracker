@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %} {% load widget_tweaks %}
+{% block title %}Edit{% endblock title %}
+{% block content %}
+    <div class="container login-margin">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 class="heading-projects">Edit your account</h1>
+                <p class="description-text">You can edit your account using the follow form</p>
+                <form action="" method="post" class="form">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    {% bootstrap_button "Submit" button_type="submit" button_class="btn btn-custom" %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

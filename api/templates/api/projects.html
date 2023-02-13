@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Bugs{% endblock %}
+{% load django_bootstrap5 %}{% load widget_tweaks %}
+{% block content %}
+    <div class="container">
+        <div class="text-center">
+            <h1 class="heading-projects mt-5 mb-5">Projects</h1>
+
+            <table class="table">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Bugs</th>
+                </tr>
+                {% for project in projects %}
+                    <tr>
+                        <td>{{ project.name }}</td>
+                        <td>{{ project.description }}</td>
+                        <td><a href="{% url 'project_bugs' project.pk %}">View bugs</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+    </div>
+
+{% endblock content %}

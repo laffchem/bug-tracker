@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container login-margin">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 class="heading-projects">Welcome {{ new_user.first_name }}!</h1>
+                <p class="description-text">Your account has been successfully created. Now you can <a
+                        href="{% url 'authapp:login' %}">log in</a>.</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+/* COLORS*/
+/*
+#f03e3e - 5
+#f76707 - 4
+#fcc419 - 3
+#22b8cf - 2
+#51cf66 - 1
+*/
+
+.critical {
+    background-color: #f03e3e !important;
+}
+
+.severe {
+    background-color: #f76707 !important;
+}
+
+.mild {
+    background-color: #fcc419 !important;
+}
+
+.functional {
+    background-color: #22b8cf !important;
+}
+
+.convenience {
+    background-color: #51cf66 !important;
+}
+
+
+.btn-custom {
+    background-color: #339af0;
+    color: #f9f9f9;
+}
+
+.btn-custom:hover,
+.btn-custom:active {
+    background-color: #1c7ed6;
+    color: #f9f9f9;
+    transition: all 0.2s;
+}
+
+.img-logo {
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+}
+
+/* CARDS */
+.card-img-top {
+    height: 16rem;
+}
+
+/* Heading */
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #339af0 !important;
+}
+
+.colors {
+    color: #f9f9f9;
+}
+
+.colors:hover,
+.colors:active {
+    color: #b9b9b9;
+    transition: all 0.2s;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.heading-primary {
+    font-size: 5rem;
+}
+
+.heading-secondary {
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.heading-projects {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.heading-sections {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.heading-sections::after {
+    content: '';
+    padding: 0.8rem;
+    border-bottom: 2px dashed #333;
+    display: flex;
+    max-width: 8rem;
+    margin: 0 auto;
+}
+
+/* HOME PAGE */
+
+.description-text {
+    font-size: 1.4rem;
+}
+
+.underlined {
+    text-decoration: underline;
+    font-weight: 400;
+    text-decoration-thickness: 3px;
+}
+
+/* LOGIN */
+
+.login-margin {
+    margin: 11.33rem auto 0;
+}
+
+/* Body */
+.content {
+    min-height: 100%;
+    padding-bottom: 17.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #339af0;
+    color: #f9f9f9;
+    margin-top: 17.5rem;
+}
+
+.attribution {
+    font-size: 1rem;
+}
+
+.heart-img {
+    width: 1.5rem;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+.icons,
+.icons:link {
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+
+.icons:hover,
+.icons:active {
+    color: #b9b9b9;
+    transition: all 0.2s;
+}
+
+.email,
+.email:link {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.email:hover,
+.email:active {
+    color: #b9b9b9;
+    transition: all 0.2s;
+}
+
+
+/* api layout */
+
+
+/* Text Stuff */
+.list-text {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.badge {
+    width: 6rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bugs {
+    width: 6rem;
+}
+
+.bug-title {
+    color: #f9f9f9;
+    background-color: #339af0;
+}
+
+.col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.bold-text {
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.list-group-item {
+    background-color: #e7e7e7;
+}
+
+.errorlist {
+    list-style: none;
+}
+
+@media (max-width: 62rem) {
+    .img-logo {
+        width: 50%;
+    }
+}
+
+@media (max-width: 25rem) {
+    .heading-projects {
+        font-size: 3rem;
+    }
+
+    .heading-primary {
+        font-size: 3.6rem;
+    }
+
+    .heading-secondary {
+        font-size: 3rem;
+    }
+
+    .heading-sections {
+        font-size: 3rem;
+    }
+
+    .description-text {
+        font-size: 1.2rem;
+    }
+
+    .objective {
+        font-size: 1rem;
+    }
+
+    .card-marg {
+        margin-bottom: 3rem !important;
+    }
+
+    .w-50 {
+        width: 75% !important;
+    }
+}

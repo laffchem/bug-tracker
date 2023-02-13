@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block title %}djBugs{% endblock %} {% block content %}
+
+{% if user.is_authenticated %}
+<h1>Authenticated Home Page</h1>
+{% else %}
+<h1>Non-Authenticated Home Page</h1>
+{% endif %}
+{% endblock %}

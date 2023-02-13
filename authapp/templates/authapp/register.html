@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% block title %}Registration{% endblock title %}
+{% block content %}
+    <h1 class="heading-projects text-center my-5">Registration</h1>
+    {% if form.errors %}
+        {% bootstrap_alert "There was an error with registration!" alert_type="danger" %}
+    {% endif %}
+    <div class="container my-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 text-center">
+                <form action="" method="post" class="form container">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    {% bootstrap_button "Submit" button_type="submit" button_class="btn btn-custom" %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
